@@ -1,0 +1,29 @@
+{
+  "name": "the_beautiful_game",
+  "version": "1.0.0",
+  "description": "a web application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mind-ashish/the_beautiful_game.git"
+  },
+  "keywords": [
+    "football"
+  ],
+  "author": "Ashish Choudhary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mind-ashish/the_beautiful_game/issues"
+  },
+  "homepage": "https://github.com/mind-ashish/the_beautiful_game#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.10.8",
+    "node-sass-middleware": "^0.11.0"
+  }
+}
