@@ -1,6 +1,6 @@
 const development={
     name:'development',
-    asset_path:'./assets'
+    asset_path:'./assets'   //in ref with app.js
 }
 
 const production={
