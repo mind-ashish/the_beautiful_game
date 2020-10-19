@@ -13,7 +13,7 @@ app.set('layout extractScripts', true);
 app.set('view engine','ejs');
 app.set('views', './views');
 
-app.use('/',require('./routes'));
+app.use('/',require('./routes')); //this load router instance exported elsewhere, from this path. 
 
 app.listen(port, function(err){
     if(err){
@@ -22,4 +22,5 @@ app.listen(port, function(err){
         console.log(`server is up and running at port ${port}`);
     }
 });
+
 
