@@ -10,6 +10,18 @@ view_helper.pathSetter(app);
 
 const expressLayouts=require('express-ejs-layouts');
 
+const sassMiddleware=require('node-sass-middleware');
+const path=require('path');
+if(env.name=='development'){ //for scss to css in dev environment using sass middleware instead of gulp 
+    app.use(sassMiddleware({
+        src: path.join(__dirname,env.asset_path,'scss'),
+        dest: path.join(__dirname,env.asset_path,'css') ,
+        debug: true,
+        outputStyle: 'extended',
+        prefix: '/css'
+    }));
+}
+//using sass middleware: conversion takes place at each req, unlike production which is cached
 app.use(express.static(env.asset_path));
 app.use(expressLayouts);
 app.set('layout extractStyles', true);
