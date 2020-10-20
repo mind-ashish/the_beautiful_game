@@ -5,7 +5,8 @@ const app=express();
 const port=8000;
 
 const view_helper=require('./config/view-helpers');
-view_helper.display(app);
+// view_helper.display(app);
+view_helper.pathSetter(app);
 
 const expressLayouts=require('express-ejs-layouts');
 
