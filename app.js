@@ -3,6 +3,10 @@ const env=require('./config/environment');
 
 const app=express();
 const port=8000;
+
+const view_helper=require('./config/view-helpers');
+view_helper.display(app);
+
 const expressLayouts=require('express-ejs-layouts');
 
 app.use(express.static(env.asset_path));
