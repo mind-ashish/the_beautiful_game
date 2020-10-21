@@ -3,6 +3,6 @@ const router=express.Router();
 
 const homeController=require('../controllers/home_controller');
 
-router.get('/',homeControllers.home);
+router.get('/',homeController.home);
 
 module.exports=router;

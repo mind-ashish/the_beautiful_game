@@ -8,7 +8,7 @@ const logger=require('./config/winston');
 const app=express();
 const port=8000;
 
-app.use(morgan("combined",{stream:logger.stream.write}));
+app.use(morgan("combined",{stream:logger.stream}));
 
 const view_helper=require('./config/view-helpers');
 // view_helper.display(app);
