@@ -43,13 +43,13 @@ app.listen(port, function(err){
         //console.log(`Error in running the server: ${err}`);
         logger.log({
             level:'error',
-            message:'Error in running the server: ${err}'
+            message:`Error in running the server: ${err}`
         });
     }else{
         //console.log(`server is up and running at port ${port}`);
         logger.log({
             level:'info',
-            message:'server is up and running at port ${port}'
+            message:`server is up and running at port ${port}`
         });
     }
 });
