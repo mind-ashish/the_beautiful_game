@@ -1,8 +1,14 @@
 const express= require('express');
 const env=require('./config/environment');
 
+const morgan=require('morgan');
+const logger=require('./config/winston');
+
+
 const app=express();
 const port=8000;
+
+app.use(morgan("combined",{stream:logger.stream.write}));
 
 const view_helper=require('./config/view-helpers');
 // view_helper.display(app);
@@ -34,9 +40,17 @@ app.use('/',require('./routes')); //this load router instance exported elsewhere
 
 app.listen(port, function(err){
     if(err){
-        console.log(`Error in running the server: ${err}`);
+        //console.log(`Error in running the server: ${err}`);
+        logger.log({
+            level:'error',
+            message:'Error in running the server: ${err}'
+        });
     }else{
-        console.log(`server is up and running at port ${port}`);
+        //console.log(`server is up and running at port ${port}`);
+        logger.log({
+            level:'info',
+            message:'server is up and running at port ${port}'
+        });
     }
 });
 
