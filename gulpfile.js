@@ -1,3 +1,10 @@
+/*
+To run gulp---
+In terminal:
+1. gulp conversion
+2. gulp build
+ */
+
 const gulp=require('gulp');
 
 const sass=require('gulp-sass');  //sass to css
@@ -8,29 +15,28 @@ const uglify=require('gulp-uglify-es').default; //minify js
 const imagemin= require('gulp-imagemin'); //minify img
 const del = require('del'); //deletion before each build
 
-gulp.task('css1',function(done){
+gulp.task('conversion',function(done){
     console.log("scss to css and minifying...");
     gulp.src('./assets/scss/**/*.scss')
     //using ./assets/**/*.scss , gulp will create scss folder in destination path, as it reads from all folders
     //but will not make any such if './assets/scss/**/*.scss' is used.
     .pipe(sass())  //scss to css
     .pipe(cssnano())    //css to compressed css 
-    .pipe(gulp.dest('./assets/css'));  //save in dest  
+    .pipe(gulp.dest('./assets/css'))  //save in dest  
     done();
+    
 });
 
-gulp.task('css2',function(done){
+gulp.task('css',function(done){
     console.log('manifest for css..');
     gulp.src('./assets/**/*.css') 
     .pipe(rev())   //add manifest to file taken from src
     .pipe(gulp.dest('./public/assets'))  //save the manifested file at this destination
-    .pipe(rev.manifest({  //creates rev-manifest.json for these css files
-        cwd:'public',  //override the current working directory to as public
-        merge:true  //merge already existing manifest files 
-    }))
-    .pipe(gulp.dest('./public/assets'));
+    .pipe(rev.manifest())
+    .pipe(gulp.dest('./public/assets/css'));
     done();
 });
+
 
 gulp.task('js',function(done){
     console.log('minifying js....');
@@ -38,11 +44,8 @@ gulp.task('js',function(done){
     .pipe(uglify()) 
     .pipe(rev())
     .pipe(gulp.dest('./public/assets'))
-    .pipe(rev.manifest({
-        cwd:'public',
-        merge:true
-    }))
-    .pipe(gulp.dest('./public/assets'));
+    .pipe(rev.manifest())
+    .pipe(gulp.dest('./public/assets/js'));
     done();
 });
 
@@ -52,11 +55,8 @@ gulp.task('images', function(done){
     .pipe(imagemin())
     .pipe(rev())
     .pipe(gulp.dest('./public/assets'))
-    .pipe(rev.manifest({
-        cwd: 'public',
-        merge: true
-    }))
-    .pipe(gulp.dest('./public/assets'));
+    .pipe(rev.manifest())
+    .pipe(gulp.dest('./public/assets/images'));
     done();
 });
 
@@ -66,7 +66,8 @@ gulp.task('clean:assets', function(done){
     done();
 });
 
-gulp.task('build', gulp.series('clean:assets', 'css1','css2', 'js', 'images'), function(done){
+
+gulp.task('build', gulp.series('clean:assets', 'css', 'js','images'), function(done){
     console.log('Building assets...');
     done();
 });

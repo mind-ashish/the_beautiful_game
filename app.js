@@ -1,7 +1,17 @@
 /*
---when setting folder structure:
+Folder structure---:
 -it is sufficient to keeps logs folder empty, winston will make sub folders
 -it is sufficient to keep public folders empty, gulp will create sub folder for assets.
+
+Logging---
+-using morgan to create winston based logs in file.
+
+-1. not writing morgan http logs in file. They r printed on console only. 
+-2. info and error logs gets printed in combined.log
+-3. uncaughted exceptions gets printed in exceptions.log
+-4. internal server errors(eg for resource not found) are printed on console unless they r identified and put in try catch nd then printed in as error in combined log.log
+
+
 */
 
 const express= require('express');
@@ -14,7 +24,7 @@ const logger=require('./config/winston');
 const app=express();
 const port=8000;
 
-app.use(morgan("combined",{stream:logger.stream}));
+app.use(morgan("combined",{stream:logger.stream.write}));
 //making morgan and winston logger. basically passing winston logger stream to morgan to write logs. see logger in winston.js 
 
 const view_helper=require('./config/view-helpers');
