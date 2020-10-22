@@ -1,3 +1,9 @@
+/*
+--when setting folder structure:
+-it is sufficient to keeps logs folder empty, winston will make sub folders
+-it is sufficient to keep public folders empty, gulp will create sub folder for assets.
+*/
+
 const express= require('express');
 const env=require('./config/environment');
 
@@ -9,6 +15,7 @@ const app=express();
 const port=8000;
 
 app.use(morgan("combined",{stream:logger.stream}));
+//making morgan and winston logger. basically passing winston logger stream to morgan to write logs. see logger in winston.js 
 
 const view_helper=require('./config/view-helpers');
 // view_helper.display(app);
