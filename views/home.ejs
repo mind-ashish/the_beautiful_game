@@ -1,15 +1,21 @@
 <link rel="stylesheet" type="text/css" href="<%= path('./css/home.css')%>">
 <header>
     <div id="main-header">
-        <img src="<%= path('./images/logo.png') %>" alt="The Beautiful Game">
-        <button type="button">Login</button>
-        <button type="button">Signup</button>
+        <div id="logo">
+            <img src="<%= path('./images/logo.png') %>" alt="The Beautiful Game">
+        </div>
+        
+        <div id="login-signup">
+            <button type="button">Login</button>
+            <button type="button">Signup</button>
+        </div>
+        
     </div>
 </header>
 <main>
-    <div>
+    <div id='main-content'>
         <p>We have a bow and arrow and if we aim well, we can hit the target. The problem is that Bayern has a bazooka.</p>
-        <img src=" <%= path('./images/klopp.jpg') %> " alt="Caption image">
+        <!-- <img src=" <%= path('./images/klopp.jpg') %> " alt="Caption image"> -->
     </div>
 </main>
 
