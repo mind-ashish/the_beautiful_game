@@ -2,14 +2,14 @@ body {
   margin: 0px;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #f0e2e2; }
+  background-color: #c7c6c6; }
 
 #main-header {
   height: auto;
   width: 100%;
   display: flex;
   position: relative;
-  background-color: #706f6f; }
+  background-color: black; }
   #main-header #logo {
     height: 90px;
     width: auto; }
