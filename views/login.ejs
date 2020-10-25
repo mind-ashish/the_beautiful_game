@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="<%=path('./css/login.css') %>">
+<main>
+    <div>
+        <div>
+            <h2>Log In</h2>
+            <button type="button">Log in with Facebook</button>
+            <button type="button">Log in with Google</button>
+        </div>
+        <h3>Or</h3>
+        <div>
+            <form action="" method="POST">
+                <input type="email" id="emailId" name="email" placeholder="Email" >
+                <input type="password" id="password" name="password" placeholder="Password">
+                <button type="submit">Login</button>
+                <a href="/forgotPassword">Forgot Password</a>
+            </form>
+            Don't have an account? <a href="/signup">Sign up</a>
+        </div>
+    </div>
+    
+</main>
