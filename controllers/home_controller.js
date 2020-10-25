@@ -5,7 +5,7 @@ var players=['a','b','c'];
 module.exports.home=function(req,res){
    // throw new Error('hello');
     return res.render('players',{   //path is wrt views
-        layout:'./layouts/home_layout',  //setting custom layout for home page, than default layout
+        layout:'./layouts/home_layout',  //setting custom layout for home page, than default layout which is typically layout.ejs
         title:'The-beautiful-game',
         leagues:leagues,
         teams:teams,
