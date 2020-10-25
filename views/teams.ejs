@@ -1,0 +1,12 @@
+<main>
+    <div>
+        <h2>
+            Pick your favourite teams.
+        </h2>
+            <%  for(let i of teams) { %>
+                <input type="checkbox" name="teams" value="<%=i%>"> <%=i%> <br>
+            <% } %>
+        </select>
+        <button type="button">Next</button>
+    </div>
+</main>
