@@ -2,40 +2,14 @@
 <html lang="en">
 <head>
 
-    <link rel="shortcut icon" href=" <%= path('./images/favicon.png')%> ">
-
-    <title>
-        <%= title %> 
-    </title>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="football related content">
-    <meta name="keywords" content="football, premier league, La-liga, Ligue-1, Bundesliga, Serie-a">
+    <%- include('../partials/_head');%>
 
     
     <link rel="stylesheet" type="text/css" href= " <%= path('./css/article_layout.css')%> " >
     <%- style %>
 </head>
 <body>
-    <header>
-        <div id="main-header">
-            <div id="logo">
-                <img src="<%= path('./images/logo.png') %>" alt="The Beautiful Game">
-                
-            </div>
-            <div id="articles">
-                <a href="/articles" class="article">Articles</a>
-            </div>
-            
-                    
-            <div id="login-signup">
-               <a href="/login"> <button type="button">Login</button> </a>
-                <a href="/signup"><button type="button">Signup</button> </a>
-            </div>
-            
-        </div>
-    </header>
+    <%- include('../partials/_header');%>
     <div id="main">
         <%- body %>
     </div>
