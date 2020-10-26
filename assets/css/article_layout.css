@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #c7c6c6; }
+
+#main-header {
+  height: auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-color: black; }
+  #main-header #logo {
+    height: 90px;
+    width: auto; }
+    #main-header #logo img {
+      height: 100%; }
+  #main-header #articles {
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 90px;
+    width: auto;
+    line-height: 90px; }
+    #main-header #articles a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem; }
+      #main-header #articles a:hover {
+        border-bottom: 1px solid white; }
+  #main-header #login-signup {
+    height: 90px;
+    width: 300px;
+    text-align: center;
+    line-height: 90px;
+    position: absolute;
+    right: 0%; }
+    #main-header #login-signup button {
+      height: 35px;
+      width: 90px;
+      margin-right: 20px; }
+
+#main {
+  height: auto;
+  min-height: 90vh;
+  width: 100%;
+  background-color: #f3f3f3; }
