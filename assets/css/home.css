@@ -15,6 +15,18 @@ body {
     width: auto; }
     #main-header #logo img {
       height: 100%; }
+  #main-header #articles {
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 90px;
+    width: auto;
+    line-height: 90px; }
+    #main-header #articles a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem; }
+      #main-header #articles a:hover {
+        border-bottom: 1px solid white; }
   #main-header #login-signup {
     height: 90px;
     width: 300px;

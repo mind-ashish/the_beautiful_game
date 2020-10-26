@@ -18,6 +18,21 @@ body{
             height: 100%;
         }
     }
+    #articles{
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 90px;
+        width: auto;
+        line-height: 90px;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            &:hover{
+                border-bottom: 1px solid white;
+            }
+        }
+    }
     #login-signup{
         height: 90px;
         width:300px;
@@ -31,6 +46,7 @@ body{
             margin-right: 20px;
         }
     }
+    
 }
 #main-content{
     height: 90vh;
