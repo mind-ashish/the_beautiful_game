@@ -70,7 +70,7 @@ body{
             -moz-transition: .25s ease-in-out;
             -o-transition: .25s ease-in-out;
             transition: .25s ease-in-out;
-            background: #e65100;
+            background: black;
 
             &:nth-child(1){
                 top: 0px;
@@ -117,6 +117,26 @@ body{
         }
     }
 }
+
+#main-header{
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid black; 
+    border-right: 1px solid black; 
+    border-bottom: 1px solid black;
+    position: relative;
+}
+#hamburger{
+    height: 10vh;
+    width:auto;
+    position: absolute;
+    right:20px;
+    line-height: 10vh;
+}
+.my-button{
+    border: none !important; 
+    outline: none !important;
+}
+
 // .animated-icon.open span:nth-child(1) {
 //     -webkit-transform: rotate(45deg);
 //     -moz-transform: rotate(45deg);

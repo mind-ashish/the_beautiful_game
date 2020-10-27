@@ -60,7 +60,7 @@ body {
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
-    background: #e65100; }
+    background: black; }
     .animated-icon span:nth-child(1) {
       top: 0px;
       -webkit-transform-origin: left center;
@@ -96,3 +96,21 @@ body {
     transform: rotate(-45deg);
     top: 21px;
     left: 8px; }
+
+#main-header {
+  background-color: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  position: relative; }
+
+#hamburger {
+  height: 10vh;
+  width: auto;
+  position: absolute;
+  right: 20px;
+  line-height: 10vh; }
+
+.my-button {
+  border: none !important;
+  outline: none !important; }
