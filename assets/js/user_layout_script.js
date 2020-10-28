@@ -15,6 +15,12 @@
     }
     window.addEventListener('load',navigationToggler);
     window.addEventListener('resize',navigationToggler);
+
+
+    // to do
+    // large resolution --> small resultion : toggle closed
+    // small resultion --> large resolution: toggle open
+    // small resolution onload : topggle closed
     
 
 
