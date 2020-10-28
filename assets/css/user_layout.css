@@ -27,6 +27,10 @@ body {
 .margin {
   margin-right: 15px; }
 
+#main-content {
+  height: auto;
+  min-height: 90vh; }
+
 /* Icon 1 */
 .animated-icon {
   width: 30px;

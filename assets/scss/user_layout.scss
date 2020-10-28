@@ -31,7 +31,10 @@ body{
 .margin{
     margin-right: 15px;
 }
-
+#main-content{
+    height: auto;
+    min-height: 90vh;
+}
 
 // hamburger
 
