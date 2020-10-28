@@ -13,7 +13,7 @@ body {
   position: fixed;
   left: inherit;
   top: inherit;
-  height: auto;
+  height: 90vh;
   font-size: 1.4rem;
   font-weight: 500; }
   #navigation ul {
@@ -108,9 +108,28 @@ body {
   height: 10vh;
   width: auto;
   position: absolute;
+  top: 0px;
   right: 20px;
   line-height: 10vh; }
 
 .my-button {
   border: none !important;
   outline: none !important; }
+
+@media (min-width: 768px) {
+  #hamburger {
+    display: none; } }
+
+@media (max-width: 768px) {
+  #main-header, #main-content {
+    border: none !important; }
+  #hamburger {
+    display: block; }
+  #navigation {
+    background-color: #f8f5f5;
+    position: fixed;
+    top: 10vh;
+    right: 0px;
+    z-index: 2000; }
+    #navigation li {
+      border-bottom: 1px solid #9c9b9b; } }
