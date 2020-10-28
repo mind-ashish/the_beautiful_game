@@ -10,17 +10,14 @@ body{
     z-index: 1000;
 }
 #navigation{
-    position: fixed;
-    left:inherit;
-    top:inherit;
     height: 90vh;
     font-size: 1.4rem;
     font-weight: 500;
+    padding-right: 20px;
     ul{
         list-style-type: none;
         li{
             margin-top: 20px;
-            
         }
     }
     a{
@@ -144,6 +141,11 @@ body{
     #hamburger{
         display:none;
     }
+    #navigation{
+        position: fixed;
+        left:inherit;
+        top:inherit;
+    }
 }
 @media (max-width:768px){
     #main-header, #main-content{
@@ -153,12 +155,11 @@ body{
         display:block;
     }        
     #navigation{
-        background-color: rgb(248, 245, 245);
+        background-color: rgb(248, 248, 248);
         position: fixed;
         top:10vh;
         right:0px;
         z-index: 2000;
-        
         li{
             border-bottom: 1px solid rgb(156, 155, 155);
         }
