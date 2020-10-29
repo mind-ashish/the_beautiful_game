@@ -23,13 +23,20 @@ body {
         border-bottom: 1px solid white; }
   #main-header #login-signup {
     background-color: firebrick;
-    height: 100%;
-    width: auto;
-    margin-right: 0px;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    justify-content: space-around; }
+    height: 90px;
+    padding-top: 25px; }
     #main-header #login-signup button {
-      height: 35px;
-      width: 90px; }
+      margin-left: 20px;
+      border: none;
+      height: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+      -webkit-box-shadow: 3px 2px 5px 0px rgba(250, 250, 250, 0.75);
+      -moz-box-shadow: 3px 2px 5px 0px rgba(250, 250, 250, 0.75);
+      box-shadow: 3px 2px 5px 0px rgba(250, 250, 250, 0.75); }
+
+@media (max-width: 576px) {
+  #login-signup {
+    padding-top: 2px !important; }
+    #login-signup button {
+      margin-bottom: 1px; } }
