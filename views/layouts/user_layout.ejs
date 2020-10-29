@@ -17,7 +17,8 @@
                 <a href="/"><img src="<%= path('./images/user-logo.png') %>" alt="The Beautiful Game"></a>
             </div>
             <div class="col-8 col-sm-8 col-md-8 col-lg-9 " id="main-header">
-
+                <!-- <h2>Todo: Heading is passed dynamically</h2> -->
+                <h2>Heading</h2>
                      <div  id="hamburger">
                         <!-- Collapse button -->
                         <button class="navbar-toggler my-button" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,14 +52,15 @@
                 
             </div>
             <div id="main-content" class="col-12 col-sm-12 col-md-8 col-lg-9" style="background-color: rgb(255, 255, 255); border-left: 1px solid black; border-right: 1px solid black;" >
-                <p>
+                <!-- <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum nam expedita magnam quia eum soluta tenetur corporis aspernatur pariatur facere et doloremque, labore, eos necessitatibus harum quas, totam sint.
-                </p>
+                </p> -->
+                <%- body %>
             </div>
 
         </div>
     </div>
-    <%- body %>
+    
     
 
     <!-- bootstrap jquery link -->
