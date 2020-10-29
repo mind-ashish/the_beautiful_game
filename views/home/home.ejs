@@ -1,15 +1,17 @@
 <!-- Todo: make main-header responsive -->
+
 <link rel="stylesheet" type="text/css" href="<%= path('./css/home.css')%>">
-<%- include('../partials/_header');%>
-<main>
-    <div id='main-content'>
-        <div id="main-text" style="background-image:url('<%= path('./images/klopp.jpg')%>')">
-          <p>We have a bow and arrow and if we aim well, we can hit the target. The problem is that Bayern has a bazooka.</p>
-        
-        <div>
-        <!-- <img src=" <%= path('./images/klopp.jpg') %> " alt="Caption image"> -->
-    </div>
-</main>
+<div class='container'>
+    <%- include('../partials/_header');%>
+    <main>
+        <div class="row" id='main-content'>
+            <div class="col-12" id="main-text" style="background-image:url('<%= path('./images/klopp.jpg')%>')">
+              <p>We have a bow and arrow and if we aim well, we can hit the target. The problem is that Bayern has a bazooka.</p>
+            <div>
+        </div>
+    </main>
+</div>
+
 <script src="<%= path('./js/home_script.js') %>"></script>
 
 
