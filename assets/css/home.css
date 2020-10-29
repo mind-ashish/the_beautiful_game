@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+  background-color: #c7c6c6; }
+
+#main-header {
+  height: auto;
+  background-color: black; }
+  #main-header #logo {
+    background-color: yellowgreen;
+    height: 90px; }
+    #main-header #logo img {
+      height: 100%; }
+  #main-header #articles {
+    background-color: yellow;
+    height: 90px;
+    width: auto;
+    line-height: 90px; }
+    #main-header #articles a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem; }
+      #main-header #articles a:hover {
+        border-bottom: 1px solid white; }
+  #main-header #login-signup {
+    background-color: firebrick;
+    height: 100%;
+    width: auto;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-around; }
+    #main-header #login-signup button {
+      height: 35px;
+      width: 90px; }
