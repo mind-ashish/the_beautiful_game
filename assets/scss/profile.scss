@@ -1,4 +1,12 @@
-#select-bar{
+#profile-container{
+    height: auto;
+    min-height:25vh;
+    border-bottom: 1px solid black;
+    .height-hundred{
+        height: inherit;
+    }
+}
+#links-bar{
     height:50px;
     padding-top: 10px;
     border-bottom: 1px solid black;

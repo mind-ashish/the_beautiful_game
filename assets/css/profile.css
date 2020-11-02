@@ -1,0 +1,19 @@
+#profile-container {
+  height: auto;
+  min-height: 25vh;
+  border-bottom: 1px solid black; }
+  #profile-container .height-hundred {
+    height: inherit; }
+
+#links-bar {
+  height: 50px;
+  padding-top: 10px;
+  border-bottom: 1px solid black; }
+  #links-bar .links {
+    text-align: center; }
+    #links-bar .links a {
+      font-size: 1.3 rem !important;
+      text-decoration: none; }
+      #links-bar .links a:hover {
+        border-bottom: 1px solid black;
+        color: black; }
