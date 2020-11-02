@@ -3,6 +3,9 @@ body {
   background-color: #b1b1b1; }
 
 #main-header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
   height: auto;
   background-color: black; }
   #main-header #logo {
