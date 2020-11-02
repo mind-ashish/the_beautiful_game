@@ -1,0 +1,31 @@
+.padding-ten{
+    padding-top:10px!important;
+}
+.margin-twenty{
+    margin-top: 20px;
+}
+.width-eighty{
+    input,textarea{
+        width:80%;
+    } 
+}
+#deactivate-container{
+    button{
+        color: red;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background-color: white;
+        }
+    }
+    
+}
+#update-details{
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        background-color: rgb(186, 228, 186);
+    }
+}

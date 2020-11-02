@@ -1,0 +1,59 @@
+<!-- update details
+
+-change user name
+-change profile pic
+-change bio
+
+Deactivate account -->
+
+ <!-- todo :
+    set default value and placeholder value of first name, last name tags , profile pic and bio. BY populating from db 
+    so that if user don't want to change all of them, but only selected thing, then rest is passed as old value instead of blank --> 
+
+<link rel="stylesheet" href="<%= path('./css/settings.css')%>">
+<form action="" method="POST">
+    <div class="row padding-ten">
+        <div class="col-12">
+            <h3>
+                Edit profile
+            </h3>
+        </div>
+    </div>
+    <div class="row padding-ten">
+        <div class="col-6 width-eighty">
+            <input type="text" id="firstname" name="firstname" placeholder="First name">
+        </div>
+        <div class="col-6 width-eighty">
+            <input type="text" id="lastname" name="lastname" placeholder="Last name">
+        </div>
+    </div>
+    <div class="row padding-ten">
+        <div class="col-12">
+            <label for="avatar">Profile Pic</label><br>
+            <input type="file" name="avatar" placeholder="Profile picture" id="avatar">
+        </div>
+
+    </div>
+    <div class="row padding-ten">
+        <div class="col-12 width-eighty">
+            <label for="bio">Bio</label><br>
+            <textarea name="About" rows="8" placeholder="About" maxlength="160" id="bio"></textarea>
+        </div>
+    </div>
+    <div class="row padding-ten">
+        <div class="col-12">
+        <button type="submit" id="update-details">Update details</button>
+        </div>
+
+    </div> 
+</form>
+<div class="row padding-ten margin-twenty" id="deactivate-container">
+    <div class="col-12">
+        <h3>
+            Deactivate account
+        </h3>
+        <a href="/deactivateAccount"><button type="button">Deactivate Account</button></a>
+    </div>
+
+</div>
+

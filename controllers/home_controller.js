@@ -4,7 +4,7 @@ var players=['a','b','c'];
 //to change & complete
 module.exports.home=function(req,res){
    // throw new Error('hello');
-    return res.render('./user/profile',{   //path is wrt views
+    return res.render('./user/settings',{   //path is wrt views
         layout:'./layouts/user_layout',  //setting custom layout for home page, than default layout which is typically layout.ejs
         title:'The-beautiful-game',
         leagues:leagues,

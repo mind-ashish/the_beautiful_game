@@ -1,0 +1,21 @@
+.padding-ten {
+  padding-top: 10px !important; }
+
+.margin-twenty {
+  margin-top: 20px; }
+
+.width-eighty input, .width-eighty textarea {
+  width: 80%; }
+
+#deactivate-container button {
+  color: red; }
+  #deactivate-container button:focus {
+    outline: none; }
+  #deactivate-container button:hover {
+    background-color: white; }
+
+#update-details:focus {
+  outline: none; }
+
+#update-details:hover {
+  background-color: #bae4ba; }
