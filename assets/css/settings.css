@@ -19,3 +19,7 @@
 
 #update-details:hover {
   background-color: #bae4ba; }
+
+.font-style {
+  font-weight: 400;
+  font-size: 1.3rem !important; }
