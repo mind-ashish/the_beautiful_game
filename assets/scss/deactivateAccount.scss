@@ -1,0 +1,20 @@
+.row-style{
+    height: 20vh;
+    padding-top: 20px;
+    text-align: center;
+    h3{
+        color: red;
+    }
+}
+.button-style{
+    
+    &:focus{
+        outline: none;
+        
+        
+    }
+    &:hover{
+        background-color: rgb(161, 196, 161);
+        color: white;
+    }
+}

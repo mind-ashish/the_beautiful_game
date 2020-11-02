@@ -1,0 +1,13 @@
+.row-style {
+  height: 20vh;
+  padding-top: 20px;
+  text-align: center; }
+  .row-style h3 {
+    color: red; }
+
+.button-style:focus {
+  outline: none; }
+
+.button-style:hover {
+  background-color: #a1c4a1;
+  color: white; }
