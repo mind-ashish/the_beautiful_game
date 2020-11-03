@@ -1,8 +1,8 @@
-<main>
+<!-- <main>
     <section id="Profile-pic">
         <h2>Pick a Profile picture</h2>
         Have a favourite selfie? Upload it now.
-        <!-- to be completed -->
+        
     </section>
     <section id="Describe Yourself">
         <h2>Describe Yourself</h2>
@@ -10,7 +10,49 @@
 
         <textarea name="About" rows="8" cols="30" placeholder="About" maxlength="160"></textarea>
         <button type="button">Next</button>
-        <!-- to be completed -->
+        
 
     </section>
-</main>
+</main> -->
+
+<link rel="stylesheet" href="<%=path('./css/login.css') %>">
+
+    <div class="container">
+        <div class="row" >
+            <div class="col-12 col-sm-10 col-md-8 col-xl-8 col-style-login box-shadow">
+                <div class="row">
+                    <div class="col-12 text-align-left-scroll-list">
+                        <h3>Pick a Profile picture</h3>
+                        <p>Have a favourite selfie? Upload it now. </p>
+                    </div>
+                </div>
+                <form action="" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-6 text-align input-style">
+                    <input type="file" name="avatar" placeholder="Profile picture" id="avatar">
+                    </div>
+                    <div class="col-6 text-align">
+                        img
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12 text-align-left-scroll-list">
+                        <h3>Describe Yourself</h3>
+                        <p>What makes you special. Don't think too hard just have fun with it. Describe yourself in 160 chars or less.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-align input-style">
+                        <textarea name="About" rows="3" placeholder="About" maxlength="160"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-align">
+                        <button type="submit" id="next-button">Next</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
