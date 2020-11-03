@@ -4,8 +4,8 @@ var players=['a','b','c'];
 //to change & complete
 module.exports.home=function(req,res){
    // throw new Error('hello');
-    return res.render('./articles/articles',{   //path is wrt views
-        layout:'./layouts/article_layout',  //setting custom layout for home page, than default layout which is typically layout.ejs
+    return res.render('./home/goodbye',{   //path is wrt views
+        layout:'./layouts/home_layout',  //setting custom layout for home page, than default layout which is typically layout.ejs
         title:'The-beautiful-game',
         leagues:leagues,
         teams:teams,
