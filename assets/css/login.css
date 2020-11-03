@@ -20,6 +20,11 @@ body {
 .text-align {
   text-align: center;
   padding-top: 15px; }
+  .text-align #fav-league {
+    height: 2rem;
+    width: 80%; }
+    .text-align #fav-league:focus {
+      outline: none; }
 
 .input-style input:focus, .input-style button:focus {
   outline: none; }

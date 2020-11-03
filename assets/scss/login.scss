@@ -20,6 +20,13 @@ body{
 .text-align{
     text-align: center;
     padding-top: 15px;
+    #fav-league{
+        height:2rem;
+        width:80%;
+        &:focus{
+            outline: none;
+        }
+    }
 }
 .input-style{
     input, button{

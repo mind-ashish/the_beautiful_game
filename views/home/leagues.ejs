@@ -1,4 +1,4 @@
-<main>
+<!-- <main>
     <div>
         <h2>
             Pick your favourite league.
@@ -10,4 +10,39 @@
         </select>
         <button type="button">Next</button>
     </div>
-</main>
+</main> -->
+
+
+<link rel="stylesheet" href="<%=path('./css/login.css') %>">
+
+    <div class="container">
+        <div class="row row-style" >
+            <div class="col-12 col-sm-10 col-md-8 col-xl-6 col-style-signup box-shadow">
+                <div class="row">
+                    <div class="col-12 text-align">
+                        <h3>Pick your favourite league.</h3>
+                    </div>
+                </div>
+                <form action="" method="POST">
+                    <div class="row">
+                        <div class="col-12 text-align">
+                            <select name="League" id="fav-league">
+                            <%  for(let i of leagues) { %>
+                                <div class="row">
+                                    <div class="col-12 text-align-scroll-list">
+                                        <option value=" <%=i %>"><%=i%></option>
+                                    </div>
+                                </div>
+                            <% } %>
+                            </select>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-12 text-align">
+                        <button type="submit" id="next-button">Next</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
