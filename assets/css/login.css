@@ -43,7 +43,7 @@ body {
     height: 100%;
     width: 20%; }
 
-#login-button, #sign-up-button, #forget-password-button {
+#login-button, #sign-up-button, #forget-password-button, #change-password-button {
   width: 30%;
   background-color: #0455f8ea;
   color: white; }
