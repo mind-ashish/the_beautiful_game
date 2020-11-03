@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(173, 173, 173);
+}
+.align-text{
+    text-align: center;
+    button{
+        width:80%;
+        background-color: white;
+        color: black;
+        &:focus{
+            outline: none;
+        }
+        -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow:    1px 1px 5px 0px   rgba(0, 0, 0, 0.75);
+        box-shadow:         1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        &:hover{
+            background-color: grey;
+        }
+    }
+}
+.row-style{
+    padding-top: 30px;
+    height: 20vh;
+}
