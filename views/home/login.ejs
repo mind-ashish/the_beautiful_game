@@ -1,21 +1,55 @@
-<link rel="stylesheet" href="<%=path('./css/login.css') %>">
-<main>
-    <div>
-        <div>
-            <h2>Log In</h2>
-            <button type="button">Log in with Facebook</button>
-            <button type="button">Log in with Google</button>
-        </div>
-        <h3>------ Or ------</h3>
-        <div>
-            <form action="" method="POST">
-                <input type="email" id="emailId" name="email" placeholder="Email" >
-                <input type="password" id="password" name="password" placeholder="Password">
-                <button type="submit">Login</button>
-                <a href="/forgotPassword">Forgot Password</a>
-            </form>
-            Don't have an account? <a href="/signup">Sign up</a>
+    <link rel="stylesheet" href="<%=path('./css/login.css') %>">
+
+    <div class="container">
+        <div class="row row-style" >
+            <div class="col-12 col-sm-10 col-md-8 col-xl-6 col-style box-shadow">
+                <div class="row">
+                    <div class="col-12 text-align">
+                        <h3>Log In</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 text-align input-style">
+                        <button type="button" id="fb-login"><i class="fa fa-facebook" aria-hidden="true"></i>Log in with Facebook</button>
+                    </div>
+                    <div class="col-6 text-align input-style">
+                        <button type="button" id="google-login"><img src="<%=path('./images/g-logo.png')%>" alt="logo"> Log in with Google</button>
+                        <!-- <button type="button" id="google-login"><i class="fa fa-google" aria-hidden="true"></i>Log in with Google</button> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-align">
+                        <h4>--- Or ---</h4>
+                    </div>
+                </div>
+                <form action="" method="POST">
+                <div class="row">
+                    <div class="col-12 text-align input-style">
+                        <input type="email" id="emailId" name="email" placeholder="Email" >
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12 text-align input-style">
+                        <input type="password" id="password" name="password" placeholder="Password" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-11 text-align-right">
+                        <a href="/forgotPassword">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-align">
+                        <button type="submit" id="login-button">Login</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-align">
+                        Don't have an account? <a href="/signup">Sign up</a>
+                    </div>
+                </div>
+                </form>
+            </div>
         </div>
     </div>
     
-</main>

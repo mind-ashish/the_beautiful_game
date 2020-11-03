@@ -1,0 +1,52 @@
+body {
+  background-color: #444444; }
+
+.row-style {
+  height: auto;
+  margin-top: 20vh; }
+
+.col-style {
+  height: auto;
+  min-height: 60vh;
+  background-color: white;
+  margin: auto; }
+
+.text-align {
+  text-align: center;
+  padding-top: 15px; }
+
+.input-style input:focus, .input-style button:focus {
+  outline: none; }
+
+.input-style input {
+  width: 80%; }
+
+.input-style button {
+  width: 90%; }
+
+#fb-login {
+  background-color: #4267b2;
+  color: white; }
+  #fb-login i {
+    margin-right: 5px; }
+
+#google-login {
+  background-color: #f7f2f2;
+  color: black; }
+  #google-login img {
+    height: 100%;
+    width: 20%; }
+
+#login-button {
+  width: 30%;
+  background-color: #0455f8ea;
+  color: white; }
+
+.text-align-right {
+  text-align: right;
+  padding-top: 10px; }
+
+.box-shadow {
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(245, 245, 245, 0.75);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(245, 245, 245, 0.75);
+  box-shadow: 1px 1px 5px 0px rgba(245, 245, 245, 0.75); }
