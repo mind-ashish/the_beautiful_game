@@ -1,22 +1,59 @@
-<link rel="stylesheet" href="<%=path('./css/signup.css') %>">
-<main>
-    <div>
-        <div>
-            <h2>Sign up</h2>
-            <button type="button">Sign up with Facebook</button>
-            <button type="button">Sign up with Google</button>
-        </div>
-        <h3>------ Or ------</h3>
-        <div>
+<link rel="stylesheet" href="<%=path('./css/login.css') %>">
+
+<div class="container">
+    <div class="row row-style" >
+        <div class="col-12 col-sm-10 col-md-8 col-xl-6 col-style-signup box-shadow">
+            <div class="row">
+                <div class="col-12 text-align">
+                    <h3>Sign up</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-align input-style">
+                    <button type="button" id="fb-signup"><i class="fa fa-facebook" aria-hidden="true"></i>Sign up with Facebook</button>
+                </div>
+                <div class="col-6 text-align input-style">
+                    <button type="button" id="google-signup"><img src="<%=path('./images/g-logo.png')%>" alt="logo">Sign up with Google</button>
+                    <!-- <button type="button" id="google-login"><i class="fa fa-google" aria-hidden="true"></i>Log in with Google</button> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-align">
+                    <h4>--- Or ---</h4>
+                </div>
+            </div>
             <form action="" method="POST">
-                <input type="text" id="firstname" name="firstname" placeholder="First name">
-                <input type="text" id="lastname" name="lastname" placeholder="Last name">
-                <input type="email" id="emailId" name="email" placeholder="Email" >
-                <input type="password" id="password" name="password" placeholder="Password">
-                <button type="submit">Sign up</button>
+            <div class="row">
+                <div class="col-12 text-align input-style">
+                    <input type="text" id="firstname" name="firstname" placeholder="First name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-align input-style">
+                    <input type="text" id="lastname" name="lastname" placeholder="Last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-align input-style">
+                    <input type="email" id="emailId" name="email" placeholder="Email" >
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 text-align input-style">
+                    <input type="password" id="password" name="password" placeholder="Password" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-align">
+                    <button type="submit" id="sign-up-button">Sign up</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-align">
+                    Have an account? <a href="/login">Login</a>
+                </div>
+            </div>
             </form>
-            Have an account? <a href="/login">Login</a>
         </div>
     </div>
-    
-</main>
+</div>
