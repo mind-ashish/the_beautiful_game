@@ -43,6 +43,15 @@ body {
   margin-right: auto;
   padding: 2px 2px 2px 2px;
   background-color: #f3f3f3; }
+  #image-holder img {
+    height: 200px;
+    width: 200px;
+    border: 1px dashed #b3b3b3;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2000; }
 
 #avatar {
   position: absolute;
