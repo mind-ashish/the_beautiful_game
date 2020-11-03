@@ -1,12 +1,32 @@
-<main>
-    <div>
-        <h2>
-            Pick your favourite Players.
-        </h2>
-            <%  for(let i of players) { %>
-                <input type="checkbox" name="players" value="<%=i%>"> <%=i%> <br>
-            <% } %>
-        </select>
-        <button type="button">Next</button>
+
+<link rel="stylesheet" href="<%=path('./css/login.css') %>">
+
+    <div class="container">
+        <div class="row row-style" >
+            <div class="col-12 col-sm-10 col-md-8 col-xl-6 col-style-signup box-shadow">
+                <div class="row">
+                    <div class="col-12 text-align">
+                        <h3>Pick your favourite Players.</h3>
+                    </div>
+                </div>
+                <form action="" method="POST">
+                    <div class="row">
+                        <div class="col-12 col-style-scroll-list">
+                            <%  for(let i of players) { %>
+                                <div class="row">
+                                    <div class="col-12 text-align-scroll-list">
+                                        <input type="checkbox" name="players" value="<%=i%>"> <%=i%> 
+                                    </div>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-12 text-align">
+                        <button type="submit" id="next-button">Next</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
     </div>
-</main>

@@ -43,7 +43,7 @@ body {
     height: 100%;
     width: 20%; }
 
-#login-button, #sign-up-button, #forget-password-button, #change-password-button {
+#login-button, #sign-up-button, #forget-password-button, #change-password-button, #next-button {
   width: 30%;
   background-color: #0455f8ea;
   color: white; }
@@ -73,3 +73,15 @@ body {
     margin: auto; }
   .box-shadow {
     box-shadow: none; } }
+
+.col-style-scroll-list {
+  max-height: 50vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+  margin: auto; }
+
+.text-align-scroll-list {
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 10px; }
