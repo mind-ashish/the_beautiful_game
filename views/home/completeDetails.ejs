@@ -1,54 +1,39 @@
-<!-- <main>
-    <section id="Profile-pic">
-        <h2>Pick a Profile picture</h2>
-        Have a favourite selfie? Upload it now.
-        
-    </section>
-    <section id="Describe Yourself">
-        <h2>Describe Yourself</h2>
-        What makes you special. Don't think too hard just have fun with it. Describe yourself in 160 chars or less.
 
-        <textarea name="About" rows="8" cols="30" placeholder="About" maxlength="160"></textarea>
-        <button type="button">Next</button>
-        
+<link rel="stylesheet" href="<%=path('./css/completeDetails.css') %>">
 
-    </section>
-</main> -->
-
-<link rel="stylesheet" href="<%=path('./css/login.css') %>">
-
-    <div class="container">
-        <div class="row" >
-            <div class="col-12 col-sm-10 col-md-8 col-xl-8 col-style-login box-shadow">
+    <div class="container" >
+        <div class="row row-style">
+            <div class="col-12">
                 <div class="row">
-                    <div class="col-12 text-align-left-scroll-list">
+                    <div class="col-12 col-style">
                         <h3>Pick a Profile picture</h3>
                         <p>Have a favourite selfie? Upload it now. </p>
                     </div>
                 </div>
                 <form action="" method="POST" enctype="multipart/form-data">
                 <div class="row">
-                    <div class="col-6 text-align input-style">
-                    <input type="file" name="avatar" placeholder="Profile picture" id="avatar">
+                    <div class="col-12" >
+                        <div id="image-holder">
+                            <input type="file" id="avatar" accept="image/png , image/jpg , image/jpeg" name="avatar">
+                            <h3 id="add-image">Choose or drag</h3>
+                        </div>
                     </div>
-                    <div class="col-6 text-align">
-                        img
-                    </div>
+                    
                 </div>
                 
                 <div class="row">
-                    <div class="col-12 text-align-left-scroll-list">
+                    <div class="col-12 col-style">
                         <h3>Describe Yourself</h3>
                         <p>What makes you special. Don't think too hard just have fun with it. Describe yourself in 160 chars or less.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 text-align input-style">
-                        <textarea name="About" rows="3" placeholder="About" maxlength="160"></textarea>
+                    <div class="col-12 col-style  text-align-centre">
+                        <textarea name="About" placeholder="About" maxlength="160" id="about" class="col-style"></textarea>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 text-align">
+                    <div class="col-12 col-style  text-align-centre">
                         <button type="submit" id="next-button">Next</button>
                     </div>
                 </div>
@@ -56,3 +41,5 @@
             </div>
         </div>
     </div>
+
+    <script src="<%=path('./js/completeDetails.js')%>"></script>
