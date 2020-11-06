@@ -12,3 +12,5 @@ router.get('/search',userController.search);
 router.get('/settings',userController.settings);
 router.get('/trends',userController.trends);
 router.get('/deactivate',userController.deactivate);
+
+module.exports = router;
