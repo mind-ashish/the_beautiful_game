@@ -19,7 +19,7 @@ router.use('/adminPanel',require('./adminPanel'));
 router.use('/article',require('./article'));
 router.use('/completeSignUp',require('./completeSignUp'));
 
-router.use('/api',require('./api'));
+// router.use('/api',require('./api'));
 
 
 module.exports=router;
