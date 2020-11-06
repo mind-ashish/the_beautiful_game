@@ -17,6 +17,9 @@ router.use('/comments', require('./comments'));
 router.use('/likes', require('./likes'));
 router.use('/adminPanel',require('./adminPanel'));
 router.use('/article',require('./article'));
+router.use('/completeSignUp',require('./completeSignUp'));
+
+router.use('/api',require('./api'));
 
 
 module.exports=router;
