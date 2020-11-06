@@ -38,7 +38,7 @@ module.exports.pathSetter=function(app){      //to modify app.locals , passing a
                 });
             }
             
-           
+        
         }
     }
 }
