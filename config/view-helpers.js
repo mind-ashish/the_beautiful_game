@@ -17,9 +17,12 @@ module.exports.pathSetter=function(app){      //to modify app.locals , passing a
                     level:'info',
                     message:`Input file path is : ${filePath}`
                 });
-                if(filePath.indexOf('./')>-1){
-                    filePath=filePath.substring(2);
-                }
+                // if(filePath.indexOf('./')>-1){
+                //     filePath=filePath.substring(2);
+                // }
+                var loc=filePath.search(/[A-Za-z]/);
+                var prefix=filePath.substring(0,loc);
+                filePath=filePath.substring(loc);
                 var base=filePath.substring(0,filePath.indexOf('/'));
                 var data=fs.readFileSync(path.join(__dirname,'../public/assets/',base,'/rev-manifest.json'),'utf8');
                  //reading rev-manifest.json file from public folder and giving path from json key-value
@@ -30,15 +33,13 @@ module.exports.pathSetter=function(app){      //to modify app.locals , passing a
                     level:'info',
                     message:`returned file path is : ${obj[filePath]}`
                 });
-                return './'+obj[filePath];
+                return prefix + obj[filePath];
             }catch(err){
                 logger.log({
                     level:'error',
-                    message:'manifest file not found exception, build again...'
+                    message:'key not found in rev manifest exception, build again...'
                 });
             }
-            
-        
         }
     }
 }

@@ -1,0 +1,1 @@
+$("#avatar").on("change",(function(){const e=this.files;console.log(e);const o=document.createElement("img");o.src=URL.createObjectURL(e[0]),o.onload=function(){URL.revokeObjectURL(this.src)},$("#image-holder").append(o),$("#image-holder").on("click",(function(){$("#image-holder img").remove(),document.getElementById("avatar").value=""}))}));

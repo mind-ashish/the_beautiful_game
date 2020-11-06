@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href=" <%= path('../images/favicon.png')%> ">
     <%- include('../partials/_head');%>
-    <link rel="stylesheet" type="text/css" href= " <%= path('./css/article_layout.css')%> " >
+    <link rel="stylesheet" type="text/css" href= " <%= path('../css/article_layout.css')%> " >
     <%- style %>
 </head>
 <body>
     <div class="container">
-        <%- include('../partials/_header');%>
+        <div class="row" id="main-header">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-3" id="logo">
+                <a href="/"><img src="<%= path('../images/logo.png') %>" alt="The Beautiful Game"></a>
+                
+            </div>
+            <div class="col-4 col-sm-3 col-md-4 col-lg-6" id="articles">
+                <a href="/articles" class="article">Articles</a> 
+            </div>
+            <div class="col-4 col-sm-5 col-md-4 col-lg-3" id="login-signup">
+                <span>
+                    <a href="/login"> <button type="button">Login</button></a>
+                </span>
+                <span>
+                    <a href="/signup"><button type="button">Signup</button></a> 
+                </span>
+            </div>
+    </div>
         <div class="row" id="main">
             <div class="col-12">
                 <%- body %>

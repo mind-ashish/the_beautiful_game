@@ -46,6 +46,13 @@ if(env.name=='development'){ //for scss to css in dev environment using sass mid
 }
 //using sass middleware: conversion takes place at each req, unlike production which is cached
 app.use(express.static(env.asset_path));
+
+//possible fix 1: route all req coming to /user/css back to /css
+// console.log(express.static(path.join(__dirname,env.asset_path,'/css')));
+// app.use('/user/css',express.static(path.join(__dirname,env.asset_path,'/css')));
+// app.use('/user/js',express.static(path.join(__dirname,env.asset_path,'/js')));
+// app.use('/user/images',express.static(path.join(__dirname,env.asset_path,'/images')));
+
 app.use(expressLayouts);
 app.set('layout extractStyles', true);
 app.set('layout extractScripts', true);
