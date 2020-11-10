@@ -1,7 +1,3 @@
-// var leagues=['Premier league', 'La liga', 'Bundesliga', 'Serie A','Uber eats Ligue 1'];
-// var teams=['dummy1','dumm2'];
-// var players=['a','b','c'];
-
 var title='The-beautiful-game';
 var layout='./layouts/home_layout';
 module.exports.home=function(req,res){
