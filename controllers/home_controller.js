@@ -1,6 +1,14 @@
 var title='The-beautiful-game';
 var layout='./layouts/home_layout';
+//  const con=require('../config/sql_connection');
 module.exports.home=function(req,res){
+    // con.query("SELECT * FROM Players_Master", function (err, result, fields) {
+    //     if (err){
+    //         console.log(err);
+    //     }
+    //     console.log(result);
+    // });
+    
     return res.render('./home/home.ejs',{   //path is wrt views
         layout:layout, //setting custom layout for home page, than default layout which is typically layout.ejs
         title:title

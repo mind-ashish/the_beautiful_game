@@ -33,6 +33,9 @@ view_helper.pathSetter(app);
 
 const expressLayouts=require('express-ejs-layouts');
 
+const con=require('./config/sql_connection');
+//just by requiring the file , makes sure it is compiled by node. even if con variable is never used. So sql connection file runs and makes connection.
+
 const sassMiddleware=require('node-sass-middleware');
 const path=require('path');
 if(env.name=='development'){ //for scss to css in dev environment using sass middleware instead of gulp 

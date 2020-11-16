@@ -1,6 +1,7 @@
 const mysql=require('mysql');
-const env=require('./config/environment');
+const env=require('./environment');
 const logger = require('./winston');
+
 const con=mysql.createConnection({
     host: env.db_host,
     user: env.db_user,
@@ -11,11 +12,14 @@ con.connect(function(err){
     if(err){
         logger.log({
             level:'error',
-            message:'error in creating connection with db'
+            message:`error in creating connection with db, ${err}`
+        });
+    }else{
+        logger.log({
+            level:'info',
+            message:'succesfully created connection with db'
         });
     }
-    logger.log({
-        level:'info',
-        message:'succesfully created connection with db'
-    })
+    
 });
+module.exports=con;
